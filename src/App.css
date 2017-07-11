@@ -1,0 +1,419 @@
+
+
+body {
+    max-width: 100%;
+    height: 100%;
+    color: #696969;
+    overflow-y: scroll;
+}
+
+
+/*MENU*/
+
+.header {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: white;
+    width: 100%;
+    margin: 0
+}
+
+#callOfPage {
+    background-image: url(Bezymyanny.png);
+    background-repeat: no-repeat;
+    background-size: 200px;
+   background-position-x: 70px
+}
+
+.menuContainer {
+    display: block;
+    position: relative;
+    left: 150px
+}
+
+.menu {
+    display: inline;
+    position: relative;
+    top: 15px;
+    margin: 20px;
+    cursor: pointer;
+    font-weight: 500
+}
+
+.menu:hover {
+    color: #6B8E23
+}
+
+
+/*CATEGORIES*/
+
+.categories {
+    display: inline;
+    position: relative;
+    left: -30px;
+    top: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.categories:hover {
+    color: #6B8E23
+}
+
+.headerCategories {
+    height: 60px;
+}
+
+.headerCategories span {
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    top: 10px;
+    left: 70px;
+}
+
+#listOfCategories {
+    display: block;
+    position: relative;
+    left: 200px;
+    top: -35px;
+    background-color: rgba(255, 255, 224, 0.5);
+    width: 420px;
+    height: 40px;
+}
+
+
+/*Container of posts*/
+
+.blog-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 630px;
+    background-color: #FFFFE0;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    align-items:flex-start
+}
+
+.close {
+    visibility: hidden;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    z-index: 100;
+    left:280px;
+    background-color: #FFFFE0;
+    cursor: pointer
+}
+
+.eachBlog:hover .close {
+    visibility: visible;
+    cursor: pointer
+}
+
+.eachBlog {
+    margin: 10px;
+    max-width: 300px;
+    height: 590px;
+    background-color: white;
+}
+
+.image {
+    position: relative;
+    top: -20px;
+    max-width: 300px;  
+}
+
+.name {
+    font-size: 20px;
+    margin: 5px;
+    font-weight: 500;
+    padding: 25px 30px 5px 30px
+}
+
+.blogText {
+    padding: 5px 30px 30px 30px
+}
+
+.date {
+    padding: 0 30px 30px 30px;
+    font-size: 13px;
+    float: left;
+}
+
+.dislike {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background: url('data:image/svg+xml;charset=utf-8,<svg%20xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"%20width%3D"16"%20height%3D"14"%20viewBox%3D"0%200%2016%2014"%20style%3D"fill%3A%233D6899%3B"><path%20d%3D"M8%203.2C7.4-0.3%203.2-0.8%201.4%201%20-0.5%202.9-0.5%205.8%201.4%207.7%201.9%208.2%206.9%2013%206.9%2013%207.4%2013.6%208.5%2013.6%209%2013L14.5%207.7C16.5%205.8%2016.5%202.9%2014.6%201%2012.8-0.7%208.6-0.3%208%203.2Z"%2F><%2Fsvg>') no-repeat;
+    background-size: 20px;
+    opacity: 0.5;
+    cursor: pointer;
+    position: relative;
+    left:100px
+}
+
+.liked {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background: url('data:image/svg+xml;charset=utf-8,<svg%20xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"%20width%3D"16"%20height%3D"14"%20viewBox%3D"0%200%2016%2014"%20style%3D"fill%3A%233D6899%3B"><path%20d%3D"M8%203.2C7.4-0.3%203.2-0.8%201.4%201%20-0.5%202.9-0.5%205.8%201.4%207.7%201.9%208.2%206.9%2013%206.9%2013%207.4%2013.6%208.5%2013.6%209%2013L14.5%207.7C16.5%205.8%2016.5%202.9%2014.6%201%2012.8-0.7%208.6-0.3%208%203.2Z"%2F><%2Fsvg>') no-repeat;
+    background-size: 20px;
+    cursor: pointer;
+    position: relative;
+    left:100px
+}
+
+#countOfLikes {
+  position: relative;
+  left:100px;
+  top:-5px;
+  margin:10px
+}
+
+.button {
+    display: none
+}
+
+.correct {
+  border:none;
+  background: none;
+  position: relative;
+  top:-25px;
+  color:#A9A9A9;
+  cursor: pointer
+}
+
+
+/*FOOTER*/
+
+#footer {
+    border-top: 2px solid;
+    border-top-color: #C0C0C0;
+    padding-top: 10px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+#footer span {
+    margin: 10px 50px
+}
+
+.footerContainer {
+    display: block;
+    position: relative;
+    top: -10px;
+    left: -30px;
+}
+
+.footerList {
+    display: inline
+}
+
+.icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url(home.png) no-repeat
+}
+
+#fb {
+    background-position: -30px 0
+}
+
+#twitter {
+    background-position: -60px 0
+}
+
+#item1 {
+    background-position: -90px 0
+}
+
+#item2 {
+    background-position: -120px 0
+}
+
+#p {
+    background-position: -150px 0
+}
+
+#t {
+    background-position: -180px 0
+}
+
+
+/*FORM FOR CREATE NEW POST*/
+
+.background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+}
+
+.createNewPost {
+    position: relative;
+    margin:auto;
+    background-color: #F5F5E7;
+    top: 200px;
+    max-width: 500px;
+    color: #8D2B1A
+}
+
+fieldset {
+    height: 350px
+}
+
+.dataEntry {
+    margin: 10px;
+    border: none;
+    width: 200px
+}
+
+#labelImage {
+    position: relative;
+    left: 33px;
+}
+
+#labelName {
+    position: relative;
+    left: 35px;
+}
+
+#labelText {
+    position: relative;
+    left: 48px;
+}
+
+#buttonForPost {
+    margin: 10px 150px;
+    border: none;
+    border-radius: 20px;
+    background-color: #D6AF7F;
+    color: white;
+    font-weight: 600;
+    width: 130px;
+    height: 40px;
+    position: relative;
+    top: 20px;
+    cursor: pointer
+}
+
+#closeForm {
+    border-radius: 15px;
+    border: none;
+    position: absolute;
+    z-index: 1000;
+    left: 470px;
+    height: 20px;
+    width: 23px;
+    background: #F2C39F;
+    color: #8D2B1A;
+    cursor: pointer
+}
+
+@media screen and (max-width:500px){
+ /*MENU*/
+
+.header {
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: white;
+    width: 100%;
+    
+}
+
+.menuContainer {
+    display: block;
+    position: relative;
+    left: 10px;
+    top:15px;
+    margin-bottom: 10px
+}
+
+/*CATEGORIES*/
+
+.categories {
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+.headerCategories {
+    height: 100px;
+}
+
+.headerCategories span {
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    top: 10px;
+    left: 70px;
+}
+
+#listOfCategories {
+    display:inline;
+    position: relative;
+    left: 50px;
+    top:-10px;
+    background-color: rgba(255, 255, 224, 0.5);
+    width: 420px;
+    height: 40px;
+}
+/*FORM FOR CREATE NEW POST*/
+
+.createNewPost {
+    position: relative;
+    margin:auto;
+    background-color: #F5F5E7;
+    top: 200px;
+    max-width: 400px;
+    color: #8D2B1A
+}
+
+
+.dataEntry {
+    margin: 10px;
+    border: none;
+    width: 150px
+}
+
+#buttonForPost {
+    margin: 0 130px;
+    border: none;
+    border-radius: 20px;
+    background-color: #D6AF7F;
+    color: white;
+    font-weight: 600;
+    width: 130px;
+    height: 40px;
+    position: relative;
+    top: 20px;
+    cursor: pointer
+}
+
+#closeForm {
+    border-radius: 15px;
+    border: none;
+    position: absolute;
+    z-index: 1000;
+    left: 380px;
+    height: 20px;
+    width: 23px;
+    background: #F2C39F;
+    color: #8D2B1A;
+    cursor: pointer
+}
+}
